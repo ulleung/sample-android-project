@@ -1,0 +1,21 @@
+{
+	"translations": [
+		{
+			"원본": "AppCompatActivity",
+			"번역": "앱컴패트활동",
+			"종류": "객체",
+			"children": [
+				{
+				"원본": "setContentView",
+				"번역": "컨텐트뷰설정",
+				"종류": "함수"
+				}, 
+				{
+				"원본": "findViewById",
+				"번역": "ID로뷰",
+				"종류": "함수"
+				}
+			]
+		}
+		]
+}
