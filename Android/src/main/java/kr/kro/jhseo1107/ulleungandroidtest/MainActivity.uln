@@ -1,0 +1,39 @@
+kr.kro.jhseo1107.ulleungandroidtest 제작 
+
+android.view.View 도입 
+android.widget.EditText 도입 
+android.widget.TextView 도입 
+androidx.appcompat.app.AppCompatActivity 도입 
+android.os.Bundle 도입 
+kr.kro.jhseo1107.EncryptBuilder1107 도입 
+kr.kro.jhseo1107.EncryptMethod 도입 
+
+java.io.UnsupportedEncodingException 도입 
+java.security.NoSuchAlgorithmException 도입 
+
+앱컴패트활동 를 상속하는 객체 MainActivity: 
+
+    정적 암호화제작1107 ㄱ = 암호화제작1107() 생성 
+
+    덧씌운 감춰진 함수 onCreate: 번들 savedInstanceState 요구 
+        상위.onCreate(savedInstanceState) 
+        상위.컨텐트뷰설정(R.layout.activity_main) 
+    ; 
+    함수 클릭시: 뷰 ㅂ 요구
+		정수 입력창id = R.id.입력창 		
+        입력창 입력 = (입력창) 상위.ID로뷰(입력창id) 
+		
+        문자열 내용문자열 = "" 		
+		내용문자열 = 입력.내용().toString() 
+
+        ㄱ.평문설정(내용문자열) 		
+		문자열 사용할암호화방식 = 암호화방식.SHA_256 		
+        ㄱ.암호화방식설정(사용할암호화방식) 
+
+        문자열 결과문자열 = ㄱ.만들기() 
+
+		정수 결과id = R.id.결과 		
+        텍스트뷰 결과 = (텍스트뷰) 상위.ID로뷰(결과id) 
+        결과.내용설정(결과문자열) 
+    ; 
+; 
